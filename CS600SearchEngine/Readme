@@ -1,0 +1,14 @@
+Project Title: Search Engine
+Author: Tao Chai
+CWID: 10442108
+Referenced Libraries: jsoup-1.11.3.jar
+Source code: StopWords.java ---- contains the stop words such as articles, prepositions, and pronouns(Learned this part from Lu Li).
+             TrieNode.java ---- Node in trie, contains 4 properties: count; value; children; endOfWord;
+             Trie.java ---- Trie class, implemented  as learned in textbook(chapter 23).
+             WordFreq.java ---- class contains word information, include resource website & frequency.
+             SearchEngine.java ---- main program.(usage of jsoup to get documents from web pages is learned from Lu Li).
+             infile.dat ---- input file, contains 5 Web URL that have been used as input, including some links to other pages..
+Description: This program works as described in textbook(23.5.4).
+             I used Trie to store words, HashMap to store word information.
+             Trie have two function: insert & search. Insert will insert word to trie. Search will return if word exist in trie.
+             When output word frequency, I show them in an increasing order. Class WordFreq contains website and frequency that word happened in this website.
